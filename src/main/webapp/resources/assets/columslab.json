@@ -1,0 +1,7 @@
+[
+  {"name":"id","title":"ID"},
+  {"name":"itemCode","title":"Item Code"},
+  {"name":"description","title":"Description"},
+  {"name":"unit","title":"Unit"},
+  {"name":"rate","title":"Unit Price"}
+]

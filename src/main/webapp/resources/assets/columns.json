@@ -1,0 +1,9 @@
+[
+  {"name":"id","title":"ID"},
+  {"name":"equipmentType","title":"Equip Type"},
+  {"name":"itemCode","title":"Item Code"},
+  {"name":"equipmentName","title":"Equipment"},
+  {"name":"description","title":"Description"},
+  {"name":"unit","title":"Unit"},
+  {"name":"rate","title":"Unit Price"}
+]

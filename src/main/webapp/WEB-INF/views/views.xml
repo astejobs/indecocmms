@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base"
+	          template="/WEB-INF/views/layout/layout.jsp">
+	<put-attribute name="header"
+	         value="/WEB-INF/views/layout/header.jsp" />
+	<put-attribute name="footer"
+	         value="/WEB-INF/views/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="profile" extends="base">
+	
+	<put-attribute name="body" 
+	         value="/WEB-INF/views/profile.jsp" />
+	</definition>
+	
+	<definition name="listForReview" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/ListForReview.jsp" />
+	</definition>
+
+
+	<definition name="unitofmeasure" extends="base">
+    	<put-attribute name="body"  value="/WEB-INF/views/UnitOfMeasure.jsp" />
+ 	</definition>
+	
+	<definition name="PMScheduleView" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/ScheduleSearch.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="listForAdmin" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/ListForAdmin.jsp" />
+	</definition>
+	
+	<definition name="scheduleEditForReview" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/ScheduleEditForReviewer.jsp" />
+	</definition>
+	
+		<definition name="scheduleEditForAdmin" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/ScheduleEditForAdmin.jsp" />
+	</definition>
+	
+	<definition name="getPMSelectedEquipments" extends="base">
+	<put-attribute name="body"  value="/WEB-INF/views/PMScheduleSearchEquipment.jsp" />
+	</definition>
+	
+	
+	 
+	<definition name="scheduleCreate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/ScheduleCreate.jsp" />
+	</definition>
+	
+	<definition name="StandardReport" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/StandardReport.jsp" />
+	</definition>
+	
+	<definition name="assetReport" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/StandardAssetReport.jsp" />
+	</definition>
+	
+	<definition name="assetReportGeneral" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/AssetReportGeneral.jsp" />
+	</definition>
+	
+	
+	<definition name="assetReportbyAge" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/AssetReportByAge.jsp" />
+	</definition>
+	
+	
+	<definition name="assetReportByLifeSpan" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/AssetReportByLifeSpan.jsp" />
+	</definition>
+	
+	
+	
+	
+	<definition name="acmvEdit" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/acmvEdit.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="acmvSearch" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/acmvSearch.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="acmvcreate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/acmvcreate.jsp" />
+	</definition>
+	
+	<definition name="electricalcreate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/electricalcreate.jsp" />
+	</definition>
+	
+	<definition name="CivilLevel3" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/CivilLevel3.jsp" />
+	</definition>
+	
+	
+	<definition name="CivilLevel4" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/CivilLevel4.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="adminDashboard" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/Admindashboard.jsp" />
+	</definition>
+	
+	<definition name="accessDashboard" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/accessdashboard.jsp" />
+	</definition>
+	
+	<definition name="editCivil" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/CivilEdit.jsp" />
+	</definition>
+	
+	
+	<definition name="building" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/Building.jsp" />
+	</definition>
+	
+	
+	<definition name="location" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/Location.jsp" />
+	</definition>
+	
+	<definition name="assettype" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/AssetType.jsp" />
+	</definition>
+	
+	
+	<definition name="addUser" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/access-create-user.jsp" />
+	</definition>
+	
+	<definition name="addGroup" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/access-create-group.jsp" />
+	</definition>
+	
+	<definition name="viewGroup" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/editgroup.jsp" />
+	</definition>
+	
+	<definition name="viewUsers" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/edituser.jsp" />
+	</definition>
+	
+	
+	<definition name="userPriviledges" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/access-priviledges.jsp" />
+	</definition>
+	
+	<definition name="changepassword" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/access-change-password.jsp" />
+	</definition>
+	
+	<definition name="sitePriviledges" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/access-site-access.jsp" />
+	</definition>
+	
+	<definition name="dashboard" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/dashboard.jsp" />
+	</definition>
+	<definition name="verifyotp" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/VerifyOtp.jsp" />
+	</definition>
+	<definition name="dashboardlevel1" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/dashboardlevel1.jsp" />
+	</definition>
+	
+	<definition name="overview" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/overview.jsp" />
+	</definition>
+	
+	
+	<definition name="accessdashboard" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/accessdashboard.jsp" />
+	</definition>
+	
+	
+	<definition name="useraccessdashboard" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/access-control-user-management.jsp" />
+	</definition>
+	
+	<definition name="groupaccessdashboard" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/access-control-group-management.jsp" />
+	</definition>
+	
+	<definition name="priviledgeaccessdashboard" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/admin/access-control-access-control.jsp" />
+	</definition>
+	
+	<definition name="quotation" extends="base">
+	<put-attribute name="body" value="/WEB-INF/views/QuotationCreate.jsp" />
+	</definition>
+	 
+	<definition name="assetSubtype" extends="base">
+	<put-attribute name="body"
+	
+	         value="/WEB-INF/views/AssetSubType.jsp" />
+	</definition>
+	
+	<definition name="department" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/Department.jsp" />
+	</definition>
+	
+	<definition name="civilCreate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/CivilCreate.jsp" />
+	</definition>
+	
+	
+	<definition name="civilSearch" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/CivilSearch.jsp" />
+	</definition>
+	<definition name="thrushholdValues" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/thrushhold_value.jsp" />
+	</definition>
+	
+	
+	<definition name="division" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/Division.jsp" />
+	</definition>
+	
+	<definition name="technician" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/Technician.jsp" />
+	</definition>
+	<definition name="costCenter" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/CostCenter.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="maintainancegroup" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/MaintainenceGroup.jsp" />
+	
+	</definition>
+	
+	<definition name="faultCategory" extends="base">
+	<put-attribute name="body" value="/WEB-INF/views/FaultCategory.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="contract" extends="base">
+	<put-attribute name="body" value="/WEB-INF/views/Contract.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="electrical" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/electricalCreate.jsp" />
+	</definition>
+	
+	
+	<definition name="electricalSearch" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/electricalSearch.jsp" />
+	</definition>
+	
+	
+	<definition name="electricalEdit" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/electricalEdit.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="mechanicalCreate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/MechanicalCreate.jsp" />
+	</definition>
+	
+	<definition name="priorty" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/Priorty.jsp" />
+	</definition>
+	
+	
+	
+	<definition name="mechanicalView" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/MechanicalView.jsp" />
+	</definition>
+	
+	
+	<definition name="mechanicalEdit" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/MechanicalEdit.jsp" />
+	</definition>
+	
+	
+	<definition name="fireedit" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/fireedit.jsp" />
+	</definition>
+	
+	<definition name="fireview" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/fireview.jsp" />
+	</definition>
+	
+	<definition name="firecreate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/FireCreate.jsp" />
+	
+	</definition>
+	
+	<definition name="requestforapproval" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/requestForApprovalCreate.jsp" />
+	</definition>
+	
+	<definition name="viewallrequests" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/requestForApprovalView.jsp" />
+	</definition>
+	<definition name="viewrfa" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/viewRfa.jsp" />
+	</definition>
+	
+	<definition name="rfaApprover" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/rfaApprover.jsp" />
+	</definition>
+	<definition name="rfaCostCenter" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/rfaCostCenter.jsp" />
+	</definition>
+	<definition name="rfaPO" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/rfaPO.jsp" />
+	</definition>
+	<definition name="faultreportcreate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/FaultReportCreate.jsp" />
+	</definition>
+	<definition name="faultreportsearch" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/FaultReportSearch.jsp" />
+	</definition>
+	<definition name="faultreportupdate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/FaultReportUpdate.jsp" />
+	</definition>
+	<definition name="faultreportequipment" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/FaultReportEquipment.jsp" />
+	</definition>
+	<definition name="frreport" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/FaultReportXlsDashboard.jsp" />
+	</definition>
+	<definition name="frexcelsearch" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/FaultReportExcelSearch.jsp" />
+	</definition>
+	<definition name="rfaAdmin" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/rfaAdmin.jsp" />
+	</definition>
+	
+	<definition name="viewrfaAdmin" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/viewRfaForAdmin.jsp" />
+	
+	</definition>	
+	<definition name="SORCreate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/SORCreate.jsp" />
+	</definition>
+	
+	
+	<definition name="SORSearch" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/SORSearch.jsp" />
+	</definition>
+
+	
+	<definition name="SOREdit" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/SOREdit.jsp" />
+	</definition>
+	
+	<definition name="labourrate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/LabourRateCreate.jsp" />
+	</definition>
+	
+	<definition name="labourrateupdate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/LabourRateUpdate.jsp" />
+	</definition>
+	
+	<definition name="labourratesearch" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/LabourRateSearch.jsp" />
+	</definition>
+
+	
+	<definition name="quotationlist" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/listQuot.jsp" />
+   </definition>
+
+    <definition name="searchquotation" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/QuotationSearch.jsp" />
+   </definition>
+   
+   <definition name="addchecklist" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/checklistcreate.jsp" />
+   </definition>
+   
+    <definition name="checklistequipment" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/checklistequipment.jsp" />
+   </definition>
+   <definition name="checklistsearch" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/checklistSearch.jsp" />
+   </definition>
+    <definition name="editchecklist" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/editchecklist.jsp" />
+   </definition>
+     <definition name="viewchecklist" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/viewChecklist.jsp" />
+   </definition>
+    <definition name="Team" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/Team.jsp" />
+   </definition>
+   
+   <definition name="PMTaskView" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/taskSearch.jsp" />
+   </definition>
+   
+  <definition name="starratequotation" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/StarRateQuotationCreate.jsp" />
+   </definition>
+   
+
+
+   <definition name="PMGetEquipment" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/PredictiveEquipSearch.jsp" />
+	</definition>
+	
+	<definition name="PMAddNewClass" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/MonitorClass.jsp" />
+	</definition>
+	
+	
+	<definition name="starratequotationview" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/starratequotationView.jsp" />
+	</definition>
+	<definition name="quotationview" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/quotationView.jsp" />
+	</definition>
+	
+<definition name="checklistTaskUpdate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/checklistTaskUpdate.jsp" />
+	</definition>	
+
+
+<definition name="SearchThrushholdValues" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/PredictiveMainSearch.jsp" />
+	</definition>
+
+<definition name="updateThrushholdValues" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/ThrushHoldEdit.jsp" />
+	</definition>
+
+<definition name="PMtaskModify" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/taskModify.jsp" />
+	</definition>
+	
+	<definition name="scheduleEdit" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/ScheduleEdit.jsp" />
+	</definition>
+
+
+<definition name="SOREdit" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/SOREdit.jsp" />
+	</definition>
+	
+	<definition name="labourrate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/LabourRateCreate.jsp" />
+	</definition>
+	
+	<definition name="labourrateupdate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/LabourRateUpdate.jsp" />
+	</definition>
+	
+	<definition name="labourratesearch" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/LabourRateSearch.jsp" />
+	</definition>
+
+	
+	<definition name="quotationlist" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/listQuot.jsp" />
+   </definition>
+
+    <definition name="searchquotation" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/QuotationSearch.jsp" />
+   </definition>
+   
+   <definition name="addchecklist" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/checklistcreate.jsp" />
+   </definition>
+   
+    <definition name="checklistequipment" extends="base"> 
+    <put-attribute name="body"
+         value="/WEB-INF/views/checklistequipment.jsp" />
+   </definition>
+   <definition name="checklistsearch" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/checklistSearch.jsp" />
+   </definition>
+    <definition name="editchecklist" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/editchecklist.jsp" />
+   </definition>
+     <definition name="viewchecklist" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/viewChecklist.jsp" />
+   </definition>
+    <definition name="Team" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/Team.jsp" />
+   </definition>
+   
+  <definition name="starratequotation" extends="base">
+    <put-attribute name="body"
+         value="/WEB-INF/views/StarRateQuotationCreate.jsp" />
+   </definition>
+   
+
+
+   
+	
+	
+	
+	
+	<definition name="starratequotationview" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/starratequotationView.jsp" />
+	</definition>
+	<definition name="quotationview" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/quotationView.jsp" />
+	</definition>
+	
+	<definition name="assetTemplate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/assetTemplate.jsp" />
+	</definition>
+	<definition name="equipmentCreate" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/EquipmentCreate.jsp" /> 
+	</definition>
+	
+		<definition name="equipmentedit" extends="base"> 
+	<put-attribute name="body"
+	         value="/WEB-INF/views/EquipmentEdit.jsp" />
+	</definition>
+	<definition name="equipmentSearch" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/EquipmentSearch.jsp" />
+	</definition>
+	
+<definition name="rfaSiteApprover" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/rfaSiteApprover.jsp" />
+	</definition>	
+
+
+<definition name="PMAddNewClass" extends="base">
+	<put-attribute name="body"
+	         value="/WEB-INF/views/MonitorClass.jsp" />
+	</definition>
+
+<definition name="thrushholdValues" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ThrushHoldCreate.jsp"/>
+</definition>
+
+<definition name="SearchThrushholdValues" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ThrushHoldSearch.jsp"/>
+</definition>
+
+<definition name="updateThrushholdValues" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ThrushHoldEdit.jsp"/>
+</definition>
+
+<definition name="PMGetEquipment" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ThrushHoldEquipSearch.jsp"/>
+</definition>
+
+<definition name="partname" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/PartName.jsp"/>
+</definition>
+<definition name="warehousecreate" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/WarehouseCreate.jsp"/>
+</definition>
+<definition name="warehousesearch" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/WarehouseSearch.jsp"/>
+</definition>
+<definition name="warehouseedit" extends="base">
+
+<put-attribute name="body" value="/WEB-INF/views/WarehouseEdit.jsp"/>
+</definition>
+
+<definition name="warehouseview" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/WarehouseView.jsp"/>
+</definition>
+<definition name="warehouseaddparts" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/WarehouseAddParts.jsp"/>
+</definition>
+<definition name="warehousebatch" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/WarehouseBatch.jsp"/>
+</definition>
+<definition name="reservepart" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ReservePart.jsp"/>
+</definition>
+<definition name="partissue" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/PartIssue.jsp"/>
+</definition>
+<definition name="partrecieve" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/PartRecieve.jsp"/>
+</definition>
+<definition name="vendor" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/Vendor.jsp"/>
+</definition>
+
+<definition name="manufacturer" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/Manufacturer.jsp"/>
+</definition>
+
+<definition name="pmReport" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/pmScheduleSearch.jsp"/>
+</definition>
+
+<definition name="createPart" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/PartCreate.jsp"/>
+</definition>
+
+<definition name="adhocreport" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/SelfhelpReports.jsp"/>
+</definition>
+
+<definition name="CreateSelfHelpReport" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/createSelfHelpReport.jsp"/>
+</definition>
+
+
+<definition name="DesignSelfHelpReport" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/adhocDesign.jsp"/>
+</definition>
+
+<definition name="viewSelfhelpReports" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/viewSelfhelpReports.jsp"/>
+</definition>
+
+<definition name="editadhocreport" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/editAdhocReport.jsp"/>
+</definition>
+
+
+
+<definition name="parttransfer" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/PartTransfer.jsp"/>
+</definition>
+
+<definition name="parttransferissue" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/PartTransferIssue.jsp"/>
+</definition>
+
+
+<definition name="parttransferissue" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/PartTransferIssue.jsp"/>
+</definition>
+
+<definition name="reportinventory" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ReportInventory.jsp"/>
+</definition>
+
+<definition name="reportinventoryconsumption" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ReportInventoryConsumption.jsp"/>
+</definition>
+
+
+<definition name="reportinventoryparts" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ReportInventoryParts.jsp"/>
+</definition>
+
+<definition name="reportinventoryparttransaction" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ReportInventoryPartTransaction.jsp"/>
+</definition>
+
+<definition name="reportinventoryparttransfer" extends="base">
+<put-attribute name="body" value="/WEB-INF/views/ReportInventoryPartTransfer.jsp"/>
+</definition>
+</tiles-definitions>

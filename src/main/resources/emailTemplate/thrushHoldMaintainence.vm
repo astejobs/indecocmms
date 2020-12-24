@@ -1,0 +1,64 @@
+﻿<html>
+	<head>
+	</head>
+	<body>
+		<table style=' border-collapse: collapse; width: 100%; text-align: left; padding: 8px;'>
+			  <tr style=' background-color: #b00000; color: white;  padding: 8px; text-align:center; height: 40px;'>
+			   
+			    <th>Equipment Name</th>
+				 <th>System</th>
+				<th>Sub System</th>
+			       <th>Building</th>
+				<th>Location</th>
+				<th>Actual Value</th>
+				 <th>Allowed LowLevel Value</th>
+				 <th>Allowed HighLevel Value</th>
+ 				<th>Reading dalte</th>
+ 				<th>MonitorType</th>
+
+					
+				
+			  </tr>
+			 #foreach($thrushHoldValue in $thrushHoldValue)
+
+				 #if( $foreach.index % 2 == 0)
+					  <tr>
+					  	<td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.name</td>
+                                                <td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.type</td>
+					  	<td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.subtype.subSystemName</td>
+					  	
+					  	<td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.building.build_name</td>
+                                                <td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.location.loc_id</td>
+ 						<td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.actualValue</td>
+                                               <td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.lowValue</td>
+                                                                   <td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.highValue</td>
+                            
+                                  <td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.lowValue</td>
+                                                    
+                                                     <td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.readingDelta</td>
+							    <td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.monitorType</td>
+
+
+
+					  </tr>
+				 #else
+				  	 <tr>
+					  	<td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.name</td>
+                                                <td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.type</td>
+					  	<td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.subtype.subSystemName</td>
+					  	
+					  	<td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.building.build_name</td>
+                                                <td style='text-align:center; height:40px;background-color: #f2f2f2'>$predictiveMaintenance.equipment.location.loc_id</td>
+ 						<td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.actualValue</td>
+                                               <td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.lowValue</td>
+                                                     <td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.readingDelta</td>
+							    <td style='text-align:center; height:40px;background-color: #f2f2f2'>$thrushHoldValue.monitorType</td>
+				     </tr>
+			  	#end
+			  #end
+		</table>
+	</body>
+</html>
+
+​
+
